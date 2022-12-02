@@ -2,29 +2,28 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package abstractclass;
+
 
 /**
  *
  * @author Leman
  */
-public class persegi extends bangundatar {
+import java.lang.Math;
+public class lingkaran extends bangundatar {
 
-    private float height;
-    private float width;
+    private int r;
 
-    public persegi(int width, int height) {
-        this.height = height;
-        this.width = width;
+    public lingkaran(int r) {
+        this.r = r;
     }
 
     @Override
     public void gambar() {
-        System.out.println("Gambar Persegi Panjang");
+        System.out.println("\nGambar Lingkaran");
     }
 
     @Override
     public float getLuas() {
-        return this.width * this.height;
+        return (float) (Math.PI * r * r);
     }
 }
